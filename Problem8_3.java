@@ -1,17 +1,18 @@
-package problem8;
+package Samurai_mr_Uchida;
 
 public class Problem8_3 {
     public static void main(String[] args) {
-        System.out.println(kaijou(30));
-
+        int number = 30;
+        System.out.println(kaijou(number));
     }
 
-    static int kaijou(int n){
-        if(n > 0){
-           return n * kaijou(n-1); 
+    static int kaijou(int n) {
+        if (n > 0) {
+            int calc = n * kaijou(n - 1);
+            return calc;
         }
         return 1;
-        
+
     }
-    
+
 }
